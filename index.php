@@ -11,7 +11,7 @@ if($method == 'POST'){
 
 	switch ($text) {
 		case 'hi':
-			$speech = "[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]";
+			$speech = '[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]";
 			break;
 
 		case 'bye':
