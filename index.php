@@ -11,8 +11,8 @@ if($method == 'POST'){
 
 	switch ($text) {
 		case 'hi':
-			$speech = '[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]';
-			break;
+			$speech = 'Hey  h r u'
+				break;
 
 		case 'bye':
 			$speech = "Bye, good night";
@@ -28,10 +28,11 @@ if($method == 'POST'){
 	}
 
 	$response = new \stdClass();
-	$response->speech = $speech;
-	$response->displayText = $speech;
+	//$response->speech = $speech;
+	//$response->displayText = $speech;
 	$response->source = "webhook";
-	//$response->messages ='Nice to meet you'
+	$response->messages ='[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]';
+		'
 				echo json_encode($response);
 }
 else
