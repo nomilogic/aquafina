@@ -11,7 +11,7 @@ if($method == 'POST'){
 
 	switch ($text) {
 		case 'hi':
-			$speech = 'Hey  h r u'
+			$speech = 'Hey  h r u';
 				break;
 
 		case 'bye':
@@ -31,7 +31,7 @@ if($method == 'POST'){
 	//$response->speech = $speech;
 	//$response->displayText = $speech;
 	$response->source = "webhook";
-	//$response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]');
+	$response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]');
 		'
 				echo json_encode($response);
 }
