@@ -31,7 +31,7 @@ if($method == 'POST'){
 	//$response->speech = $speech;
 	//$response->displayText = $speech;
 	$response->source = "webhook";
-	$response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered"]},{"type": 0,"speech": ""}]', false);
+	$response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered","Branded"]},{"type": 0,"speech": ""}]', false);
 	echo json_encode($response);
 }
 else
