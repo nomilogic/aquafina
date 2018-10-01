@@ -14,8 +14,15 @@ if($method == 'POST'){
 	$response->source = "webhook";
 	//$response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What is your Water?","replies": ["Boiled","Filtered","Branded"]},{"type": 0,"speech": ""}]', false);
 	//$response->fulfillmentMessages =json_decode('[{"quickReplies": {"title": "Please which type of water do you use?","quickReplies": ["Boiled Water","Filtered Water","Branded Water"]}}]', false);
+	if($json->result->contexts!=[])
+	{
+	$checkParams=findParam($json);
+	}
+	else
+	{
+		echo "add Values to Database";
 
-    $checkParams=findParam($json);
+	}
     if( $checkParams->index!="-1")
     {
        switch ($checkParams->params[Count($checkParams->params)-1]) {	
