@@ -24,7 +24,7 @@ if($method == 'POST'){
                $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "Please select your city?","replies": ["Karachi","Hyderabad"]},{"type": 0,"speech": ""}]', false);
                break;
            
-           case 'water_type':
+           case 'watertype':
                # code...
                $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What type of water do you use?","replies": ["Boiled Water","Filtered Water","Branded Water"]},{"type": 0,"speech": ""}]', false);
                break;
