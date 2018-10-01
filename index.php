@@ -24,11 +24,11 @@ if($method == 'POST'){
                $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "Please select your city?","replies": ["Karachi","Hyderabad"]},{"type": 0,"speech": ""}]', false);
                break;
            
-           case 'waterType':
+           case 'water_type':
                # code...
-               $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What type of water do you use?","replies": ["Boiled","Filtered","Branded"]},{"type": 0,"speech": ""}]', false);
+               $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "What type of water do you use?","replies": ["Boiled Water","Filtered Water","Branded Water"]},{"type": 0,"speech": ""}]', false);
                break;
-           
+			  
            default:
                # code...
                break;
