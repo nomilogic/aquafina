@@ -18,7 +18,7 @@ if($method == 'POST'){
     $checkParams=findParam($json);
     if( $checkParams->index!="-1")
     {
-       switch ($checkParams->params[Count($checkParams->params)-1]) {
+       switch ($checkParams->params[Count($checkParams->params)-1]) {	
            case 'city':
                # code...
                $response->messages =json_decode('[{"type": 2,"platform": "facebook", "title": "Please select your city?","replies": ["Karachi","Hyderabad"]},{"type": 0,"speech": ""}]', false);
